@@ -37,7 +37,7 @@ class Program
         // Define the graph and its connections
         var graph = new Dictionary<int, List<int>>
         {
-            [1] = new() { 2, 3 },
+            [1] = new() { 3, 2 },
             [2] = new() { 1, 4, 5 },
             [3] = new() { 1, 6 },
             [4] = new() { 2 },
@@ -49,3 +49,5 @@ class Program
         BFS(graph, 1);
     }
 }
+
+// BigO --> tijdcomplexiteit = O(V+E) = 11
